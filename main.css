@@ -1,0 +1,70 @@
+/* variables */
+/* mixins */
+/*  all pages  */
+body {
+  background-color: #000000;
+  color: white; }
+
+/*  Homepage  */
+#logo {
+  font-size: 50px;
+  text-align: center; }
+
+#logo-description {
+  text-align: center; }
+
+[role='navigation'] {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  [role='navigation'] > * {
+    margin: 30px;
+    padding-left: 20px;
+    padding-right: 20px; }
+  [role='navigation'] a {
+    color: white;
+    text-decoration: none; }
+    [role='navigation'] a.hover-accent1:hover {
+      color: white; }
+      [role='navigation'] a.hover-accent1:hover::after {
+        width: 100% !important;
+        margin-left: 0px !important; }
+    [role='navigation'] a.hover-accent1::after {
+      content: '';
+      display: inline-block;
+      width: 0px;
+      margin-left: 50%;
+      border-bottom: 2px solid green;
+      -webkit-transition: width 0.2s ease-in-out, margin-left 0.2s ease-in-out;
+      transition: width 0.2s ease-in-out, margin-left 0.2s ease-in-out; }
+    [role='navigation'] a.hover-accent2:hover {
+      color: white; }
+      [role='navigation'] a.hover-accent2:hover::after {
+        width: 100% !important;
+        margin-left: 0px !important; }
+    [role='navigation'] a.hover-accent2::after {
+      content: '';
+      display: inline-block;
+      width: 0px;
+      margin-left: 50%;
+      border-bottom: 2px solid red;
+      -webkit-transition: width 0.2s ease-in-out, margin-left 0.2s ease-in-out;
+      transition: width 0.2s ease-in-out, margin-left 0.2s ease-in-out; }
+    [role='navigation'] a.hover-accent3:hover {
+      color: white; }
+      [role='navigation'] a.hover-accent3:hover::after {
+        width: 100% !important;
+        margin-left: 0px !important; }
+    [role='navigation'] a.hover-accent3::after {
+      content: '';
+      display: inline-block;
+      width: 0px;
+      margin-left: 50%;
+      border-bottom: 2px solid blue;
+      -webkit-transition: width 0.2s ease-in-out, margin-left 0.2s ease-in-out;
+      transition: width 0.2s ease-in-out, margin-left 0.2s ease-in-out; }
+    [role='navigation'] a li {
+      list-style: none; }
+
+/*# sourceMappingURL=main.css.map */

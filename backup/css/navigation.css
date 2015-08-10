@@ -1,0 +1,90 @@
+.navbar-collapse{
+    background-color:black;
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus{
+    color: #EEE;
+    background-color: #333;
+}
+
+a.navbar-brand > img {
+    height:26px;
+    position: relative;
+    top: -3px;
+}
+
+img.wallpaper {
+    background-image: url("../img/foc91.jpg");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+    height: 100%;
+    left:0;
+    position:absolute;
+    top:0;
+    width: 100%;
+    min-width: 400px;
+    z-index: -100;
+}
+
+
+ul.navbar-right {
+    margin-top:13px;
+}
+ul.navbar-right > li {
+    display:inline;
+}
+ul.navbar-right > li > a {
+    display:inline;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top:0px;
+    padding-bottom:0px;
+}
+
+ul.navbar-right i.fa{
+    color:#3A3A3A;
+    font-size:24px;
+    transition: text-shadow 1s;
+    text-shadow:  0 1px 0px rgba(150,150,150,0.5);
+    transition: color 0.5s;
+}
+
+ul.navbar-right i.fa-github:hover{
+    color:#FFF;
+}
+
+ul.navbar-right i.fa-twitter:hover{
+    color: #008aff;
+    text-shadow:  0 1px 0px rgba(0,138,255,0.7);
+
+}
+
+ul.navbar-right i.fa-envelope:hover{
+    color:#00923F;
+    
+}
+
+ul.navbar-right i.fa-pinterest:hover{
+    color: #cb2127;
+    text-shadow:  0 1px 0px rgba(203, 33, 39,0.7);
+
+}
+
+
+div.navbar-collapse{
+    overflow:hidden !important;
+}
+
+/* Override bootstrap default */
+a:focus{
+    outline: none; 
+}
+
+ul.navbar-nav > li ::moz-focus-inner{
+    border: 0;
+}
+
+#titleText h1{
+    font-size: 3em;
+}
