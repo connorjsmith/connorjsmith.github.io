@@ -4,25 +4,28 @@ $active-text-color: rgb(243,243,243);
 $accent1: rgb(56,181,156);
 $accent2: rgb(56,181,255);
 $accent3: rgb(220,85,135);
-$background: rgb(0, 10, 30);
+$background: rgb(31, 37, 50);
 
 /* mixins */
 @mixin underline($textColor, $lineColor) {
     &:hover {
         color: $textColor;
         &::after{
-            width: 150% !important;
-            margin-left: -25% !important;
+            -webkit-transform: scaleX(1);
+                -ms-transform: scaleX(1);
+                    transform: scaleX(1);
         }
     }
     &::after {
-        content: '';
+        content: ' ';
         display: inline-block;
-        width: 0px;
-        margin-left: 50%;
+        width: 100%;
         border-bottom: 2px solid $lineColor;
-        -webkit-transition: width 0.2s ease-in-out, margin-left 0.2s ease-in-out;
-                transition: width 0.2s ease-in-out, margin-left 0.2s ease-in-out;
+        -webkit-transform: scaleX(0.00001);
+            -ms-transform: scaleX(0.00001);
+                transform: scaleX(0.00001);
+        -webkit-transition: -webkit-transform 175ms ease-in-out;
+                transition: transform 175ms ease-in-out;
     }
 }
 
@@ -45,8 +48,8 @@ footer {
 i.icon {
     margin: 25px;
     font-size: 1.5em;
-    -webkit-transition: color 0.2s ease-in-out;
-            transition: color 0.2s ease-in-out;
+    -webkit-transition: color 175ms ease-in-out;
+            transition: color 175ms ease-in-out;
     &:hover {
         color: $accent3
     }
@@ -80,7 +83,6 @@ i.icon {
 
 #social-homepage {
     text-align: center;
-    background-color: $accent2;
 }
 
 a {
@@ -101,7 +103,10 @@ a {
     }
 
     a {
+        margin: 30px;
         padding: 20px;
+        text-align: center;
+        width: 13ch;
         font-variant: small-caps !important;
         &.hover-accent1{
             @include underline(white, $accent1);
