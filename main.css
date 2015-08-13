@@ -4,9 +4,11 @@
 body {
   background-color: #1f2532;
   color: #f3f3f3;
-  padding: 2ch 5ch 0 5ch; }
+  padding: 2ch 2ch 0 2ch; }
 
 footer {
+  color: #969696;
+  font-size: 0.9em;
   text-align: center;
   position: absolute;
   bottom: 0px;
@@ -15,7 +17,6 @@ footer {
   display: block; }
 
 i.icon {
-  margin: 25px;
   font-size: 1.5em;
   -webkit-transition: color 175ms ease-in-out;
   transition: color 175ms ease-in-out; }
@@ -44,6 +45,8 @@ i.icon {
 
 #social-homepage {
   text-align: center; }
+  #social-homepage a {
+    margin: 25px; }
 
 a {
   text-decoration: none;
@@ -62,8 +65,7 @@ a {
     margin: 30px;
     padding: 20px;
     text-align: center;
-    width: 13ch;
-    font-variant: small-caps !important; }
+    width: 13ch; }
     [role='navigation'] a.hover-accent1:hover {
       color: white; }
       [role='navigation'] a.hover-accent1:hover::after {

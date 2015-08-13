@@ -1,6 +1,7 @@
 // TODO: import the ion icon font into the webpage (faster hosting?)
 /* variables */
 $active-text-color: rgb(243,243,243);
+$inactive-text-color: rgb(150,150,150);
 $accent1: rgb(56,181,156);
 $accent2: rgb(56,181,255);
 $accent3: rgb(220,85,135);
@@ -33,10 +34,12 @@ $background: rgb(31, 37, 50);
 body {
     background-color: $background;
     color: $active-text-color;
-    padding: 2ch 5ch 0 5ch;
+    padding: 2ch 2ch 0 2ch;
 }
 
 footer {
+    color: $inactive-text-color;
+    font-size: 0.9em;
     text-align: center;
     position: absolute;
     bottom: 0px;
@@ -46,7 +49,6 @@ footer {
 }
 
 i.icon {
-    margin: 25px;
     font-size: 1.5em;
     -webkit-transition: color 175ms ease-in-out;
             transition: color 175ms ease-in-out;
@@ -83,6 +85,9 @@ i.icon {
 
 #social-homepage {
     text-align: center;
+    a {
+        margin: 25px;
+    }
 }
 
 a {
@@ -107,7 +112,6 @@ a {
         padding: 20px;
         text-align: center;
         width: 13ch;
-        font-variant: small-caps !important;
         &.hover-accent1{
             @include underline(white, $accent1);
         }
