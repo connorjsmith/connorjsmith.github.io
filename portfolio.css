@@ -23,14 +23,14 @@ body {
 
 [role='navigation'] {
   padding: 20px 30px 20px 30px;
-  background-color: #1f2532;
+  background-color: #0b0e13;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
   text-transform: uppercase; }
   [role='navigation'] a {
-    color: #a9acb3; }
+    color: #8F939E; }
     [role='navigation'] a i {
       padding: 10px; }
   [role='navigation'] .pull-left a {
@@ -48,13 +48,32 @@ body {
 #left-panel {
   text-align: center;
   float: left;
-  background-color: black;
+  background-color: #1f2532;
   width: 250px;
   height: 100%;
   text-transform: uppercase; }
+  #left-panel h2 {
+    font-size: 1.0em;
+    background-color: #0b0e13;
+    line-height: 4em;
+    font-weight: normal; }
+    #left-panel h2:first-of-type {
+      margin-top: 0px;
+      color: #38b59c; }
+    #left-panel h2:nth-of-type(2) {
+      color: #38b5ff; }
+    #left-panel h2:nth-of-type(3) {
+      color: #dc5587; }
+  #left-panel a {
+    color: inherit; }
   #left-panel ul {
+    color: #8F939E;
     text-align: left;
     padding-left: 30px;
-    list-style: none; }
+    list-style: none;
+    text-transform: none; }
+    #left-panel ul li {
+      margin-top: 5px;
+      line-height: 1.75em; }
 
 /*# sourceMappingURL=portfolio.css.map */

@@ -4,11 +4,12 @@
 }
 /* variables */
 $active-text-color: rgb(255,255,255);
-$inactive-text-color: rgb(169,172,179);
+$inactive-text-color:#8F939E;
 $accent1: rgb(56,181,156);
 $accent2: rgb(56,181,255);
 $accent3: rgb(220,85,135);
 $background: rgb(31, 37, 50);
+$background_dark: #232323;
 
 /* mixins */
 @mixin underline($textColor, $lineColor) {

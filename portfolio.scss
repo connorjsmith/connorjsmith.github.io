@@ -8,7 +8,7 @@ body {
 
 [role='navigation'] {
     padding: 20px 30px 20px 30px;
-    background-color: $background;
+    background-color: darken($background, 10%);
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -42,13 +42,36 @@ body {
 #left-panel{
     text-align: center;
     float: left;
-    background-color: black;
+    background-color: $background;
     width: 250px;
     height: 100%;
     text-transform: uppercase;
+    h2 {
+        font-size: 1.0em;
+        background-color: darken($background, 10%);
+        line-height: 4em;
+        font-weight: normal;
+        &:first-of-type{
+            margin-top: 0px;
+            color: $accent1;
+        }
+        &:nth-of-type(2){
+            color: $accent2;
+        }
+        &:nth-of-type(3) {
+            color: $accent3;
+        }
+    }
+    a { color: inherit }
     ul {
+        color: $inactive-text-color;
         text-align: left;
         padding-left: 30px;
         list-style: none; 
+        text-transform: none;
+        li {
+            margin-top: 5px;
+            line-height: 1.75em;
+        }
     }
 }
