@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Light.otf');
+}
+/* variables */
+$active-text-color: rgb(255,255,255);
+$inactive-text-color: rgb(169,172,179);
+$accent1: rgb(56,181,156);
+$accent2: rgb(56,181,255);
+$accent3: rgb(220,85,135);
+$background: rgb(31, 37, 50);
+
+/* mixins */
+@mixin underline($textColor, $lineColor) {
+    &:hover {
+        color: $textColor;
+        &::after{
+            -webkit-transform: scaleX(1.5);
+                -ms-transform: scaleX(1.5);
+                    transform: scaleX(1.5);
+        }
+    }
+    &::after {
+        content: ' ';
+        display: inline-block;
+        width: 100%;
+        border-bottom: 2px solid $lineColor;
+        -webkit-transform: scaleX(0.00001);
+            -ms-transform: scaleX(0.00001);
+                transform: scaleX(0.00001);
+        -webkit-transition: -webkit-transform 175ms ease-in-out;
+                transition: transform 175ms ease-in-out;
+    }
+}
+
+/* globals */
+i.icon {
+    font-size: 1.5em;
+    -webkit-transition: color 175ms ease-in-out;
+            transition: color 175ms ease-in-out;
+    &:hover {
+        color: $accent3
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $active-text-color;
+}
+

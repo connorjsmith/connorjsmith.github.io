@@ -1,106 +1,11 @@
-// TODO: import the ion icon font into the webpage (faster hosting?)
-/* variables */
-$active-text-color: rgb(243,243,243);
-$inactive-text-color: rgb(150,150,150);
-$accent1: rgb(56,181,156);
-$accent2: rgb(56,181,255);
-$accent3: rgb(220,85,135);
-$background: rgb(31, 37, 50);
-
-/* mixins */
-@mixin underline($textColor, $lineColor) {
-    &:hover {
-        color: $textColor;
-        &::after{
-            -webkit-transform: scaleX(1);
-                -ms-transform: scaleX(1);
-                    transform: scaleX(1);
-        }
-    }
-    &::after {
-        content: ' ';
-        display: inline-block;
-        width: 100%;
-        border-bottom: 2px solid $lineColor;
-        -webkit-transform: scaleX(0.00001);
-            -ms-transform: scaleX(0.00001);
-                transform: scaleX(0.00001);
-        -webkit-transition: -webkit-transform 175ms ease-in-out;
-                transition: transform 175ms ease-in-out;
-    }
-}
-
+/* HOMEPAGE */
+@import 'mixins_constants';
 /*  all pages  */
-body {
-    background-color: $background;
-    color: $active-text-color;
-    padding: 2ch 2ch 0 2ch;
-}
-
-footer {
-    color: $inactive-text-color;
-    font-size: 0.9em;
-    text-align: center;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    display: block;
-}
-
-i.icon {
-    font-size: 1.5em;
-    -webkit-transition: color 175ms ease-in-out;
-            transition: color 175ms ease-in-out;
-    &:hover {
-        color: $accent3
-    }
-}
-
-/*  Homepage  */
-#logo {
-    //TODO: Get a good title font
-    font-size: 50px;
-    text-align: center;
-}
-
-#logo-description {
-    text-align: center;
-}
-
-#social-bottom {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    position: fixed;
-    bottom: 0px;
-    right: 10px;
-    a {
-        margin: 0px 0px 5px 0px;
-        .icon {
-            margin: 0px;
-        }
-    }
-}
-
-#social-homepage {
-    text-align: center;
-    a {
-        margin: 25px;
-    }
-}
-
-a {
-    text-decoration: none;
-    color: $active-text-color;
-}
-
 [role='navigation'] {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
     & > * {
         margin: 30px;
         padding-left: 30px;
@@ -108,10 +13,11 @@ a {
     }
 
     a {
-        margin: 30px;
-        padding: 20px;
+        margin: 20px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 30px;
         text-align: center;
-        width: 13ch;
         &.hover-accent1{
             @include underline(white, $accent1);
         }
@@ -124,5 +30,42 @@ a {
         li {
             list-style: none;
         }
+    }
+}
+footer {
+    color: $inactive-text-color;
+    font-size: 0.9em;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: block;
+}
+
+/*  Homepage  */
+body {
+    background-color: $background;
+    font-family: 'Montserrat', sans-serif;
+    color: $active-text-color;
+    padding: 15vh 5vwh 0 5vw;
+    
+}
+#logo {
+    font-size: 50px;
+    text-align: center;
+}
+#logo-description {
+    text-align: center;
+}
+
+#social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    & > a {
+        font-size: 1.2em;
+        margin: 10px 30px 10px 30px;
     }
 }
