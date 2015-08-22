@@ -84,7 +84,7 @@ a {
       list-style: none; }
 
 footer {
-  color: #8F939E;
+  color: rgba(255, 255, 255, 0.5);
   font-size: 0.9em;
   text-align: center;
   position: absolute;
@@ -133,7 +133,6 @@ body {
     -webkit-flex: 1 100%;
     flex: 1 100%; }
   #latest img {
-    box-shadow: 5px 5px 8px #0b0e13;
     -webkit-flex: 1 auto;
     flex: 1 auto;
     width: 350px;

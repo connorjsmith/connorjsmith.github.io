@@ -7,7 +7,7 @@ body {
 }
 
 [role='navigation'] {
-    padding: 20px 30px 20px 30px;
+    padding: 20px;
     background-color: darken($background, 10%);
     display: flex;
     flex-flow: row wrap;
@@ -21,7 +21,8 @@ body {
     }
 
     .pull-left a {
-        margin: 30px;
+        margin: 20px;
+        line-height: 30px;
         &:hover{
             color: $active-text-color;
             -webkit-transition: color 175ms ease-in-out;

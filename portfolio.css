@@ -22,7 +22,7 @@ body {
   color: white; }
 
 [role='navigation'] {
-  padding: 20px 30px 20px 30px;
+  padding: 20px;
   background-color: #0b0e13;
   display: flex;
   flex-flow: row wrap;
@@ -30,11 +30,12 @@ body {
   justify-content: space-between;
   text-transform: uppercase; }
   [role='navigation'] a {
-    color: #8F939E; }
+    color: rgba(255, 255, 255, 0.5); }
     [role='navigation'] a i {
       padding: 10px; }
   [role='navigation'] .pull-left a {
-    margin: 30px; }
+    margin: 20px;
+    line-height: 30px; }
     [role='navigation'] .pull-left a:hover {
       color: white;
       -webkit-transition: color 175ms ease-in-out;
@@ -67,7 +68,7 @@ body {
   #left-panel a {
     color: inherit; }
   #left-panel ul {
-    color: #8F939E;
+    color: rgba(255, 255, 255, 0.5);
     text-align: left;
     padding-left: 30px;
     list-style: none;
