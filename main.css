@@ -47,7 +47,7 @@ body {
       [role='navigation'] a#header-logo {
         position: absolute;
         left: 0px;
-        top: 0px; } }
+        top: 10px; } }
   @media (max-width: 699px) {
     [role='navigation'] {
       bottom: 0px;
