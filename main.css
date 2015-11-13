@@ -19,9 +19,13 @@ a {
 /*  all pages  */
 body {
   position: absolute;
-  top: 10px;
+  top: 50px;
   right: 10px;
   left: 10px; }
+  @media (max-width: 700px) {
+    body {
+      padding-top: 100px;
+      padding-bottom: 75px; } }
 
 [role='navigation'] {
   position: fixed;
@@ -48,7 +52,7 @@ body {
         position: absolute;
         left: 0px;
         top: 10px; } }
-  @media (max-width: 699px) {
+  @media (max-width: 700px) {
     [role='navigation'] {
       bottom: 0px;
       left: 0px;
@@ -87,7 +91,15 @@ body {
   text-align: center; }
 
 #logo-description {
-  text-align: center; }
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5); }
+  #logo-description em {
+    color: white;
+    font-style: normal; }
 
 #social {
   display: flex;

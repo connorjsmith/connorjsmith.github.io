@@ -3,10 +3,13 @@
 /*  all pages  */
 body {
     position: absolute;
-    top: 10px;
+    top: 50px;
     right: 10px;
     left: 10px;
-
+    @media (max-width: $mobile-width) {
+        padding-top: 100px;
+        padding-bottom: 75px;
+    }
 }
 [role='navigation'] {
     position: fixed;
@@ -14,7 +17,7 @@ body {
     flex-direction: row;
     align-items: center;
     /* classical desktop mode */
-    @media (min-width: 700px){
+    @media (min-width: $mobile-width){
         background-color: $background_opaque;
         padding-top: 10px;
         top: 0px;
@@ -36,7 +39,7 @@ body {
         }
     }
     /* responsive mobile mode */
-    @media (max-width: 699px) {
+    @media (max-width: $mobile-width) {
         bottom: 0px;
         left: 0px;
         right: 0px;
@@ -80,7 +83,16 @@ body {
     text-align: center;
 }
 #logo-description {
+    max-width: $mobile-width;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
     text-align: center;
+    color: $inactive-text-color;
+    em {
+        color: $active-text-color;
+        font-style: normal;
+    }
 }
 
 #social {
