@@ -93,6 +93,12 @@ body {
         color: $active-text-color;
         font-style: normal;
     }
+    a {
+        transition: color 200ms ease-in-out;
+        &:hover{
+            color: $accent3;
+        }
+    }
 }
 
 #social {

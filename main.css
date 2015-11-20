@@ -100,6 +100,10 @@ body {
   #logo-description em {
     color: white;
     font-style: normal; }
+  #logo-description a {
+    transition: color 200ms ease-in-out; }
+    #logo-description a:hover {
+      color: #dc5587; }
 
 #social {
   display: flex;
