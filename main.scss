@@ -78,6 +78,9 @@ body {
     padding: 15vh 5vwh 0 5vw;
     
 }
+
+
+
 #logo {
     font-size: 50px;
     text-align: center;
@@ -112,38 +115,6 @@ body {
     }
 }
 
-#latest {
-    max-width: 900px;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    display: -webkit-flex;
-    -webkit-flex-flow: row wrap;
-            flex-flow: row wrap;
-    justify-content: center;
-    h1 {
-        text-align: center;
-        font-weight: normal;
-        font-size: 1.3em;
-        -webkit-flex: 1 100%;
-                flex: 1 100%;
-    }
-    img {
-        //box-shadow: 5px 5px 8px darken($background, 10%);
-        -webkit-flex: 1 auto;
-                flex: 1 auto;
-        width: 350px;
-        height: 350px;
-        margin: 15px;
-        transition: filter 200ms ease-in-out;
-        // Must be last do to compatibility reasons with chrome
-        -webkit-transition: -webkit-filter 200ms ease-in-out;
-        -webkit-filter: grayscale(90%);
-                filter: grayscale(90%);
-        &:hover {
-            -webkit-filter: grayscale(0%);
-                    filter: grayscale(0%);
-        }
-    }
+#resume {
+    @include underline($active-text-color, $accent2);
 }
