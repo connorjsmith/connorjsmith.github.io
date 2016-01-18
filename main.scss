@@ -3,13 +3,10 @@
 /*  all pages  */
 body {
     position: absolute;
-    top: 20px;
     right: 10px;
     left: 10px;
-    @media (max-width: $mobile-width) {
-        padding-top: 10vh;
-        padding-bottom: 7.5vh;
-    }
+    padding-top: 5vh;
+    padding-bottom: 7.5vh;
 }
 [role='navigation'] {
     position: fixed;
