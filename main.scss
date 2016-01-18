@@ -3,12 +3,12 @@
 /*  all pages  */
 body {
     position: absolute;
-    top: 50px;
+    top: 20px;
     right: 10px;
     left: 10px;
     @media (max-width: $mobile-width) {
-        padding-top: 100px;
-        padding-bottom: 75px;
+        padding-top: 10vh;
+        padding-bottom: 7.5vh;
     }
 }
 [role='navigation'] {
@@ -84,6 +84,7 @@ body {
 #logo {
     font-size: 50px;
     text-align: center;
+    color: $inactive-text-color;
 }
 #logo-description {
     max-width: $mobile-width;
@@ -91,6 +92,7 @@ body {
     margin-right: auto;
     margin-top: 3em;
     text-align: center;
+    line-height: 1.6em;
     color: $inactive-text-color;
     em {
         color: $active-text-color;

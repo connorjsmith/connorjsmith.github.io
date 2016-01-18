@@ -14,18 +14,18 @@ i.icon {
 
 a {
   text-decoration: none;
-  color: white; }
+  color: #3ED6FF; }
 
 /*  all pages  */
 body {
   position: absolute;
-  top: 50px;
+  top: 20px;
   right: 10px;
   left: 10px; }
   @media (max-width: 700px) {
     body {
-      padding-top: 100px;
-      padding-bottom: 75px; } }
+      padding-top: 10vh;
+      padding-bottom: 7.5vh; } }
 
 [role='navigation'] {
   position: fixed;
@@ -44,10 +44,10 @@ body {
       justify-content: flex-end; }
       [role='navigation'] > a {
         padding: 10px 20px 10px 20px;
-        color: rgba(255, 255, 255, 0.5);
+        color: white;
         transition: color 200ms ease-in-out; }
         [role='navigation'] > a:hover {
-          color: white; }
+          color: #3ED6FF; }
       [role='navigation'] a#header-logo {
         position: absolute;
         left: 0px;
@@ -70,7 +70,7 @@ body {
           color: #1e1e1e; } }
 
 footer {
-  color: rgba(255, 255, 255, 0.5);
+  color: white;
   font-size: 0.9em;
   text-align: center;
   position: absolute;
@@ -81,14 +81,15 @@ footer {
 
 /*  Homepage  */
 body {
-  background-color: #1f2532;
+  background-color: #101420;
   font-family: 'Montserrat', sans-serif;
-  color: white;
+  color: #3ED6FF;
   padding: 15vh 5vwh 0 5vw; }
 
 #logo {
   font-size: 50px;
-  text-align: center; }
+  text-align: center;
+  color: white; }
 
 #logo-description {
   max-width: 700px;
@@ -96,9 +97,10 @@ body {
   margin-right: auto;
   margin-top: 3em;
   text-align: center;
-  color: rgba(255, 255, 255, 0.5); }
+  line-height: 1.6em;
+  color: white; }
   #logo-description em {
-    color: white;
+    color: #3ED6FF;
     font-style: normal; }
   #logo-description a {
     transition: color 200ms ease-in-out; }
@@ -115,7 +117,7 @@ body {
     margin: 10px 30px 10px 30px; }
 
 #resume:hover {
-  color: white; }
+  color: #3ED6FF; }
   #resume:hover::after {
     -webkit-transform: scaleX(1.5);
     -ms-transform: scaleX(1.5);
