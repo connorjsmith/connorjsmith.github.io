@@ -92,8 +92,9 @@ body {
     line-height: 1.6em;
     color: $inactive-text-color;
     em {
-        color: $active-text-color;
+        color: white;
         font-style: normal;
+        font-weight: bold;
     }
     a {
         transition: color 200ms ease-in-out;

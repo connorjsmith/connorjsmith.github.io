@@ -30,7 +30,7 @@ body {
   justify-content: space-between;
   text-transform: uppercase; }
   [role='navigation'] a {
-    color: white; }
+    color: #ddd; }
     [role='navigation'] a i {
       padding: 10px; }
   [role='navigation'] .pull-left a {
@@ -68,7 +68,7 @@ body {
   #left-panel a {
     color: inherit; }
   #left-panel ul {
-    color: white;
+    color: #ddd;
     text-align: left;
     padding-left: 30px;
     list-style: none;
