@@ -4,16 +4,17 @@
 }
 /* variables */
 $active-text-color: #3ED6FF;
-$inactive-text-color: #ddd;
+$inactive-text-color: rgb(189,190,192);
 $alt-active-text-color: rgba(30,30,30,1);
 $alt-inactive-text-color: rgba(100,100,100,0.8);
 $accent1: rgb(56,181,156);
 $accent2: rgb(56,181,255);
 $accent3: rgb(220,85,135);
 $background: #101420;
-$background_opaque: rgba(31, 37, 50, 0.95);
+
+$background_opaque: rgba(30, 35, 41, 0.95);
 $background_dark: #232323;
-$mobile-width: 700px;
+$mobile-width: 70ch;
 
 /* mixins */
 @mixin underline($textColor, $lineColor) {
