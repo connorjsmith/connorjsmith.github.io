@@ -40,8 +40,11 @@ body {
         color: white;
         font-style: normal;
         font-weight: bold;
+        display: inline-block;
     }
     a {
+        display: inline-block;
+        padding-left: 0.5ch;
         transition: color 200ms ease-in-out;
         &:hover{
             color: $accent3;

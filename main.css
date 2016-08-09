@@ -51,8 +51,11 @@ body {
   #logo-description em {
     color: white;
     font-style: normal;
-    font-weight: bold; }
+    font-weight: bold;
+    display: inline-block; }
   #logo-description a {
+    display: inline-block;
+    padding-left: 0.5ch;
     transition: color 200ms ease-in-out; }
     #logo-description a:hover {
       color: #dc5587; }
