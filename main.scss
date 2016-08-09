@@ -25,7 +25,7 @@ body {
 
 #logo {
     font-size: 50px;
-    text-align: justify-left;
+    text-align: center;
     color: white;
 }
 #logo-description {
@@ -33,7 +33,9 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 3em;
-    text-align: center;
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
     line-height: 1.6em;
     color: $inactive-text-color;
     em {
@@ -58,8 +60,4 @@ body {
         font-size: 1.2em;
         margin: 10px 30px 10px 30px;
     }
-}
-
-#resume {
-    @include underline($active-text-color, $accent2);
 }

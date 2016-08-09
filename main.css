@@ -45,7 +45,9 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 3em;
-  text-align: center;
+  text-align: justify;
+  -moz-text-align-last: center;
+  text-align-last: center;
   line-height: 1.6em;
   color: #bdbec0; }
   #logo-description em {
@@ -65,22 +67,5 @@ body {
   #social > a {
     font-size: 1.2em;
     margin: 10px 30px 10px 30px; }
-
-#resume:hover {
-  color: #3ED6FF; }
-  #resume:hover::after {
-    -webkit-transform: scaleX(1.5);
-    -ms-transform: scaleX(1.5);
-    transform: scaleX(1.5); }
-#resume::after {
-  content: ' ';
-  display: inline-block;
-  width: 100%;
-  border-bottom: 2px solid #38b5ff;
-  -webkit-transform: scaleX(0.00001);
-  -ms-transform: scaleX(0.00001);
-  transform: scaleX(0.00001);
-  -webkit-transition: -webkit-transform 175ms ease-in-out;
-  transition: transform 175ms ease-in-out; }
 
 /*# sourceMappingURL=main.css.map */
