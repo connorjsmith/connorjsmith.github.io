@@ -36,6 +36,9 @@ body {
     text-align: center;
     line-height: 1.6em;
     color: $inactive-text-color;
+    span {
+        display: inline-block;
+    }
     em {
         color: white;
         font-style: normal;

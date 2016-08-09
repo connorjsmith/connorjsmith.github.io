@@ -48,6 +48,8 @@ body {
   text-align: center;
   line-height: 1.6em;
   color: #bdbec0; }
+  #logo-description span {
+    display: inline-block; }
   #logo-description em {
     color: white;
     font-style: normal;
