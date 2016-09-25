@@ -47,7 +47,6 @@ body {
     }
     a {
         display: inline-block;
-        padding-left: 0.5ch;
         transition: color 200ms ease-in-out;
         &:hover{
             color: $accent3;
