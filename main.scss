@@ -13,7 +13,7 @@ body {
 #logo {
     font-size: 50px;
     text-align: center;
-    color: white;
+    color: $body-text-highlight-color;
 }
 #logo-description {
     max-width: $mobile-width;
@@ -22,12 +22,12 @@ body {
     margin-top: 3em;
     text-align: center;
     line-height: 1.6em;
-    color: $inactive-text-color;
+    color: $body-text-color;
     span {
         display: inline-block;
     }
     em {
-        color: white;
+        color: $body-text-highlight-color;
         font-style: normal;
         font-weight: bold;
         display: inline-block;
@@ -47,7 +47,6 @@ body {
     justify-content: center;
     align-items: center;
     & > a {
-        font-size: 1.2em;
-        margin: 10px 30px 10px 30px;
+        margin: 10px 20px;
     }
 }

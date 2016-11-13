@@ -28,7 +28,7 @@ body {
 #logo {
   font-size: 50px;
   text-align: center;
-  color: white; }
+  color: rgba(255, 255, 255, 0.9); }
 
 #logo-description {
   max-width: 70ch;
@@ -37,11 +37,11 @@ body {
   margin-top: 3em;
   text-align: center;
   line-height: 1.6em;
-  color: #bdbec0; }
+  color: rgba(255, 255, 255, 0.7); }
   #logo-description span {
     display: inline-block; }
   #logo-description em {
-    color: white;
+    color: rgba(255, 255, 255, 0.9);
     font-style: normal;
     font-weight: bold;
     display: inline-block; }
@@ -57,7 +57,6 @@ body {
   justify-content: center;
   align-items: center; }
   #social > a {
-    font-size: 1.2em;
-    margin: 10px 30px 10px 30px; }
+    margin: 10px 20px; }
 
 /*# sourceMappingURL=main.css.map */
