@@ -1,27 +1,10 @@
-/* HOMEPAGE */
 @import 'mixins_constants';
-/*  all pages  */
-body {
-    min-width: 350px;
-    position: absolute;
-    right: 0px;
-    left: 0px;
-    margin: 0px;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-top: 5vh;
-    padding-bottom: 7.5vh;
-}
-/*  Homepage  */
 body {
     background-color: $background;
     font-family: 'Montserrat', sans-serif;
     color: $active-text-color;
     padding: 15vh 5vwh 0 5vw;
-    
 }
-
-
 
 #logo {
     font-size: 50px;
