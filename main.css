@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'Montserrat';
   src: url("fonts/Montserrat-Light.otf"); }
+
 /* variables */
 /* mixins */
 /* globals */
@@ -9,11 +10,11 @@ i.icon {
   -webkit-transition: color 175ms ease-in-out;
   transition: color 175ms ease-in-out; }
   i.icon:hover {
-    color: #dc5587; }
+    color: #ef4835; }
 
 a {
   text-decoration: none;
-  color: #3ED6FF; }
+  color: white; }
 
 html {
   -webkit-text-size-adjust: 100%; }
@@ -21,43 +22,49 @@ html {
 body {
   background-color: #101420;
   font-family: 'Montserrat', sans-serif;
-  color: #3ED6FF;
+  color: white;
   padding: 5vh 5vw;
   font-size: 1em; }
 
-#logo {
-  font-size: 50px;
-  text-align: center;
-  color: white; }
+#left-pane {
+  float: left;
+  width: 60%;
+  max-width: 70ch;
+  height: 100%;
+  display: inline-block; }
 
 #logo-description {
-  max-width: 70ch;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3em;
-  text-align: center;
+  margin-top: 20vh;
+  text-align: left;
   line-height: 1.6em;
-  color: #bdbec0; }
+  color: white; }
   #logo-description span {
     display: inline-block; }
   #logo-description em {
     color: white;
     font-style: normal;
-    font-weight: bold;
     display: inline-block; }
   #logo-description a {
-    display: inline-block;
-    transition: color 200ms ease-in-out; }
+    padding-bottom: 0.5ch;
+    border-bottom: 2px solid #ef4835;
+    -webkit-transition: color 175ms ease-in-out;
+    transition: color 175ms ease-in-out; }
     #logo-description a:hover {
-      color: #dc5587; }
+      color: #ef4835; }
 
 #social {
+  margin-top: 15vh;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center; }
+  justify-content: left;
+  align-items: left; }
   #social > a {
-    font-size: 1.2em;
-    margin: 10px 30px 10px 30px; }
-
-/*# sourceMappingURL=main.css.map */
+    font-size: 0.85em;
+    color: #bdbec0;
+    padding: 10px 10px 50px 10px;
+    -webkit-transition: color 175ms ease-in-out;
+    transition: color 175ms ease-in-out; }
+    #social > a:first-child {
+      margin-left: -10px; }
+    #social > a:hover {
+      color: #ef4835; }

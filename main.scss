@@ -2,52 +2,63 @@
 html {
     -webkit-text-size-adjust: 100%; // disable iphone rotation scaling
 }
+
 body {
     background-color: $background;
     font-family: 'Montserrat', sans-serif;
-    color: $active-text-color;
+    color: white;
     padding: 5vh 5vw;
     font-size: 1em;
 }
 
-#logo {
-    font-size: 50px;
-    text-align: center;
-    color: white;
-}
-#logo-description {
+#left-pane {
+    float: left;
+    width: 60%;
     max-width: $mobile-width;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3em;
-    text-align: center;
+    height: 100%;
+    display: inline-block;
+}
+
+#logo-description {
+    margin-top: 20vh;
+    text-align: left;
     line-height: 1.6em;
-    color: $inactive-text-color;
+    color: white;
+
     span {
         display: inline-block;
     }
+
     em {
         color: white;
         font-style: normal;
-        font-weight: bold;
         display: inline-block;
     }
+
     a {
-        display: inline-block;
-        transition: color 200ms ease-in-out;
-        &:hover{
-            color: $accent3;
-        }
+        @include always-underline($accent-orange, $accent-orange);
     }
 }
 
 #social {
+    margin-top: 15vh;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     & > a {
-        font-size: 1.2em;
-        margin: 10px 30px 10px 30px;
+        font-size: 0.85em;
+        color: $inactive-text-color;
+        padding: 10px 10px 50px 10px;
+        -webkit-transition: color 175ms ease-in-out;
+                transition: color 175ms ease-in-out;
+
+        &:first-child {
+            margin-left: -10px;
+        }
+
+        &:hover {
+            color: $accent-orange;
+        }
     }
 }

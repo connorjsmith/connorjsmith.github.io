@@ -7,6 +7,7 @@ $active-text-color: #3ED6FF;
 $inactive-text-color: rgb(189,190,192);
 $alt-active-text-color: rgba(30,30,30,1);
 $alt-inactive-text-color: rgba(100,100,100,0.8);
+$accent-orange: rgb(239,72,53);
 $accent1: rgb(56,181,156);
 $accent2: rgb(56,181,255);
 $accent3: rgb(220,85,135);
@@ -17,7 +18,7 @@ $background_dark: #232323;
 $mobile-width: 70ch;
 
 /* mixins */
-@mixin underline($textColor, $lineColor) {
+@mixin hover-underline($textColor, $lineColor) {
     &:hover {
         color: $textColor;
         &::after{
@@ -39,18 +40,28 @@ $mobile-width: 70ch;
     }
 }
 
+@mixin always-underline($hoverColor, $lineColor) {
+    &:hover {
+        color: $hoverColor;
+    }
+    padding-bottom: 0.5ch;
+    border-bottom: 2px solid $lineColor;
+    -webkit-transition: color 175ms ease-in-out;
+            transition: color 175ms ease-in-out;
+}
+
 /* globals */
 i.icon {
     font-size: 1.5em;
     -webkit-transition: color 175ms ease-in-out;
             transition: color 175ms ease-in-out;
     &:hover {
-        color: $accent3
+        color: $accent-orange
     }
 }
 
 a {
     text-decoration: none;
-    color: $active-text-color;
+    color: white;
 }
 
